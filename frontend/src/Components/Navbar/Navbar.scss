@@ -1,0 +1,98 @@
+@import '../../Scss/common/colors';
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+.nav{
+    &-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p{
+            font-size: 38px;
+        }
+    }
+    &-menu{
+        display: flex;
+        align-items: center;
+        color: $a;
+        list-style: none;
+        gap: 50px;
+        font-size: 20px;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            cursor: pointer;
+            &:has(.nav-hr.expanded) a{
+                color: $act;
+            }
+        }
+        .nav-hr {
+            overflow: hidden;
+            width: 100%;
+            hr {
+                border: none;
+                height: 3px;
+                border-radius: 10px;
+                background: $act;
+                opacity: 0;
+                transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out;
+                transition: all .2s ease-in-out;
+                width: 0%;
+            }
+            
+            &.expanded hr {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+    &-login-card{
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        button{
+            width: 157px;
+            height: 58px;
+            outline: none;
+            border: 1px solid $a;
+            border-radius: 75px;
+            color: $a;
+            font-size: 20px;
+            font-weight: 500;
+            background: white;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            &:active{
+                background: $act;
+            }
+        }
+        
+    }
+    &-cart-count{
+        width: 22px;
+        height: 22px;
+        display: grid;
+        place-items: center;
+        margin: -35px 0 0 -55px;
+        border-radius: 11px;
+        font-size: 14px;
+        background: $act;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+

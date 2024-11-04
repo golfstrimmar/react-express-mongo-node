@@ -1,0 +1,73 @@
+@import '../../Scss/common/colors';
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+  display: flex;
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0  0 0 180px;
+    line-height: 1.1;
+    h2 {
+    color: $b;
+      font-size: 26px;
+      font-weight: 600;
+    }
+    
+    div {
+      .hand-hand-icon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        p {
+        
+        }
+        
+        img {
+          width: 105px;
+        }
+      }
+      
+      p { font-size: 100px;
+        font-weight: 700;
+        color: $b1;
+      }
+    }
+    
+    .hero-latest-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 15px;
+      height:  70px;
+      width:  310px;
+      border-radius: 10px;
+      margin: 0 0 0 0;
+      background: $btn;
+      color:  white;
+      font-size:  22px;
+      font-weight: 500;
+      
+      div {
+      }
+      
+      img {
+      }
+    }
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+    }
+  }
+}

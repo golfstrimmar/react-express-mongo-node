@@ -1,0 +1,31 @@
+@import '../../Scss/common/colors';
+.item {
+  &:hover{
+transform: scale(1.05);
+    transition: all .6s ease-in-out;
+  }
+  width:  350px;
+  img {
+  }
+  
+  p {
+    margin: 6px 0px;
+  }
+  
+  .item-prices {
+    display: flex;
+    gap: 20px;
+    
+    .item-price-new {color:  $a;
+      font-size:  18px;
+      font-weight: 600;
+      
+    }
+    
+    .item-price-old {color:  $a;
+      font-size:  18px;
+      font-weight: 500;
+      text-decoration: line-through;
+    }
+  }
+}
