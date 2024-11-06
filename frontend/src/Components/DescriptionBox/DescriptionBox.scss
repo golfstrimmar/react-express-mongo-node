@@ -1,0 +1,21 @@
+@import "../../Scss/common/colors";
+
+.descriptionbox {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  &-nav {
+    display: flex;
+
+    &-box {
+      border: 1px solid $a3;
+      padding: 10px;
+    }
+  }
+
+  &-description {
+    border: 1px solid $a3;
+    padding: 10px;
+  }
+}
