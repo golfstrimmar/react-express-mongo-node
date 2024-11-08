@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "../Scss/Pages/shop-category.scss";
-import { ShopContext } from "../Context/ShopContext";
+import { ShopContext } from "../Context/ShopContext.jsx";
 import dropdown from "../Components/Assets/dropdown_icon.png";
-import Item from "../Components/Item/Item";
+import Item from "../Components/Item/Item.jsx";
 
 const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
